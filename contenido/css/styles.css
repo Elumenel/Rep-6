@@ -1,0 +1,1164 @@
+*{
+  margins: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*︵‿︵‿୨   TO MAKE FOOTERS STAY AT BOTTOM IN SMALL PAGES   ୧‿︵‿︵*/
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
+  margin-top: 15px;
+}
+
+
+/* ╔════════════════════════ ✿.｡.:* ☆:**:. Nav .:**:.☆*.:｡.✿ ════════════════════════╗ */
+
+#navbar-container{
+  margin: -5px 0px -20px 0px;
+  background-color: Snow !important;
+}
+
+.navbar-brand{
+  font-size:275%;
+  font-family: 'Hurricane';
+  padding-left: 25px;
+}
+
+#navbar-text{
+  font-size:150%;
+  font-family: 'Raleway';
+}
+
+.nav-link{
+  color: DarkTurquoise !important;
+}
+
+.nav-link.active{
+  color: Black !important;
+}
+
+.nav-link:hover, #a5:hover, #a6:hover:hover, #a7:hover, #a8:hover{
+  color: DeepPink !important;
+}
+
+#a5, #a6, #a7, #a8 {
+  color: LightSteelBlue !important
+}
+
+
+/* ╔══════════════════════ ✿.｡.:* ☆:**:. Footer .:**:.☆*.:｡.✿ ══════════════════════╗ */
+
+.footer-container{
+  margin-top: 50px;
+  padding: 50px 250px 50px 250px;
+  background-color: Snow !important;
+}
+
+.footer-brand{
+  font-family: 'Hurricane';
+  font-size:355%;
+  font-weight: lighter;
+}
+
+#brand{
+  color: Black;
+  text-decoration: none;
+}
+
+.footer-link, .signup-title{
+  font-family: 'Raleway';
+  font-size:125%;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.footer-icon, .footer-link, .signup-title{
+  color: DarkTurquoise;
+}
+
+.footer-icon, .footer-link:hover{
+color: DeepPink;
+}
+
+.footer-icon{
+  padding-right: 25px;
+}
+
+#icon-container{
+  padding-top: 15px;
+  margin-left: -15px;
+}
+
+.container-right{
+  padding-right:15px;
+  text-align: right;
+}
+
+hr{
+  margin-top: 0px;
+  padding-bottom: 0px;
+  background: linear-gradient(90deg, rgba(224,255,255,1) 0%, rgba(175,238,238,1) 35%, rgba(0,206,209,1) 100%);
+}
+
+.newsletter-text{
+  color: DarkGray;
+  padding-top: -10px;
+  line-height: 0.7;
+}
+
+.input-newsletter{
+  margin: 5px 0px 15px 0px;
+  padding: 0px;
+  border-width: 0px 0px 2px 0px;
+  border-radius: 5px 5px 0px 0px;
+  border-style: dashed;
+  background-color: transparent;
+}
+
+.btn-secondary-outline, .btn-primary-outline{
+  padding: 5px 25px 7px 25px;
+  border-radius: 20px;
+  border: solid 1px DarkTurquoise;
+  color: DarkTurquoise;
+}
+
+.btn-secondary-outline:hover{
+  background-color: DarkTurquoise;
+  color: White;
+}
+
+.btn-primary-outline:hover{
+  background-color: DeepPink;
+  border: DeepPink;
+  color: White;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .footer-container{
+    padding: 50px 145px 50px 145px;
+  }
+}
+
+
+/* ╔═══════════════════════ ✿.｡.:* ☆:**:. Main .:**:.☆*.:｡.✿ ═══════════════════════╗ */
+
+#carousel-main{
+  height: 995px;
+  margin-bottom: 25px;
+  /*filter: brightness(50%);*/
+}
+
+.carousel-inner img{
+  position: absolute;
+  top:-205px;
+}
+
+h2{
+  padding-top: 16px;
+  text-align: center;
+}
+
+.title-line-1{
+  font-family: 'Raleway';
+  font-size: 65%;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.title-line-2{
+  font-family: 'Hurricane', cursive;
+  font-weight: lighter;
+  font-size: 325%;
+  line-height: 20px;
+  padding-bottom: 50px;
+}
+
+#comment-title{
+  margin-top: -50px;
+}
+
+.call-to-action{
+  width: 25%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px;
+  text-align: center;
+  border: solid 1px DeepPink;
+  border-radius: 20px;
+}
+
+.call-to-action a{
+  font-family: 'Raleway';
+  font-size: 115%;
+  font-weight: bold;
+  text-decoration: none;
+  color: DeepPink;
+}
+
+.call-to-action a i{
+  padding-left: 7px;
+}
+
+.call-to-action:hover{
+  background-color: DeepPink;
+  color: White !important;
+}
+
+.call-to-action:hover a{
+  color: White;
+}
+
+
+/* ╔═════════════════════ ✿.｡.:* ☆:**:. Instantes .:**:.☆*.:｡.✿ ═════════════════════╗ */
+
+.grid-container{
+  display: flex;
+  justify-content: center;
+}
+
+.grid-inner{
+  display: grid;
+  grid-template-columns: repeat(33, 35px);
+  grid-template-rows: repeat(60, 35px);
+  grid-gap: 5px;
+  margin: 5px;
+}
+
+#pic1, #text1{
+  grid-column: 1 /span 22;
+  grid-row: 1 / span 16;
+}
+
+#picture2, #text2{
+  grid-column: 23 / span 11;
+  grid-row: 1 / span 8;
+}
+
+#picture3, #text3{
+  grid-column: 23 / span 11;
+  grid-row: 9 / span 8;
+}
+
+#picture4, #text4{
+  grid-column: 1 / span 11;
+  grid-row: 17 / span 8;
+}
+
+#picture5, #text5{
+  grid-column: 1 / span 11;
+  grid-row: 25 / span 8;
+}
+
+#picture6, #text6{
+  grid-column: 12 / span 22;
+  grid-row: 17 / span 16;
+}
+
+#picture7, #text7{
+  grid-column: 1 / span 22;
+  grid-row: 33 / span 16;
+}
+
+#picture8, #text8{
+  grid-column: 23 / span 11;
+  grid-row: 33 / span 8;
+}
+
+#picture9, #text9{
+  grid-column: 23 / span 11;
+  grid-row: 41 / span 8;
+}
+
+#picture10, #text10{
+  grid-column: 1 / span 11;
+  grid-row: 49 / span 8;
+}
+
+#picture11, #text11{
+  grid-column: 1 / span 11;
+  grid-row: 57 / span 8;
+}
+
+#picture12, #text12{
+  grid-column: 12 / span 22;
+  grid-row: 49 / span 16;
+}
+
+#picture13, #text13{
+  grid-column: 1 / span 22;
+  grid-row: 65 / span 16;
+}
+
+#picture14, #text14{
+  grid-column: 23 / span 11;
+  grid-row: 65 / span 8;
+}
+
+#picture15, #text15{
+  grid-column: 23 / span 11;
+  grid-row: 73 / span 8;
+}
+
+.grid_item, .text{
+  transition: 0.5s ease-in-out;
+}
+
+.grid_item:hover{
+  opacity: 0;
+}
+
+.grid_item:hover .text{
+  opacity: 1;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', cursive;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: White;
+  background-color: PaleTurquoise;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ╔═══════════════════════ ✿.｡.:* ☆:**:. Forms .:**:.☆*.:｡.✿ ═══════════════════════╗ */
+
+.form-description{
+  text-align: center;
+  font-family: 'Raleway';
+  font-style: italic;
+  color: LightGray;
+}
+
+.form-description a{
+  font-weight: bold;
+  color: DeepPink;
+  text-decoration: none;
+}
+
+.form-delete-user {
+  position: relative;
+  left: 1500px;
+  bottom: -25px;
+}
+
+.form-delete-user button {
+  font-size: 200%;
+  color: PaleTurquoise;
+  background-color: transparent;
+  border: none
+}
+
+.form-delete-user button:hover {
+  font-size: 200%;
+  color: OrangeRed;
+  background-color: transparent;
+  border: none
+}
+
+#expoint{
+  position:relative;
+    top:4px;
+}
+
+select option{
+  color: Gray !important;
+  font-family: 'Raleway';
+}
+
+input, select, textarea, label, .small-green-button{
+  font-family: 'Raleway';
+}
+
+.form-container .form-control, .form-container .form-select{
+  background-color: LavenderBlush;
+  border: 0px;
+}
+
+.is-validated{
+  background-color: LavenderBlush !important;
+}
+
+.form-container label{
+  font-weight: bold;
+  color:DarkTurquoise;
+}
+
+#order-form input{
+  font-size: 95%;
+  color: Gray !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: Snow !important;
+  box-shadow: inset 0 2px 3px rgb(224, 255, 255, 0.075), 0 0 8px rgb(0, 206, 209, 2) !important;
+}
+
+.small-green-button{
+  background-color:DarkTurquoise !important;
+  border:0px !important;
+  width: inherit;
+}
+
+.btn-primary:hover {
+  background-color:LimeGreen !important;
+  border:0px !important;
+}
+
+.btn-secondary:hover {
+  background-color:OrangeRed !important;
+  border:0px !important;
+}
+
+button:focus{
+  box-shadow: none !important;
+}
+
+
+/* ╔═════════════════════ ✿.｡.:* ☆:**:. Captcha1 .:**:.☆*.:｡.✿ ═════════════════════╗ */
+
+.captcha {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  color: DarkTurquoise;
+}
+
+.not-robot {
+  margin-top: 10px;
+  margin-right: 25px;
+	font-size: 150%;
+}
+
+.not-robot i {
+  padding-left: 1px;
+  font-size: 85%
+}
+
+.spinner {
+  margin-right: 20px;
+  margin-top: -15px;
+	width: 15px;
+	height: 15px;
+}
+
+.spinner input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input[type="checkbox"]+.checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 15px;
+	height: 15px;
+	border: 1px solid DarkGray;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]+.checkmark span {
+	content: '';
+	position: relative;
+	margin-top: -10px;
+	transform: rotate(45deg);
+	width: 12px;
+	height: 19px;
+	opacity: 0;
+}
+
+input[type="checkbox"]+.checkmark>span:after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	bottom: 0;
+  left: 0;
+	background-color: LimeGreen;
+}
+
+input[type="checkbox"]+.checkmark>span:before {
+	content: '';
+	position: absolute;
+	width: 3px;
+	bottom: 0;
+  right: 0;
+	background-color: LimeGreen;
+}
+
+input[type="checkbox"]:checked+.checkmark {
+	animation: 2s spin forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span {
+	animation: 1s fadein 1.9s forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span:after {
+  animation:.3s bottomslide 2s forwards;
+}
+
+input[type="checkbox"]:checked+.checkmark>span:before {
+  animation:.5s rightslide 2.2s forwards;
+}
+
+@keyframes fadein {
+	0% {
+    opacity: 0;
+  }
+
+	100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bottomslide {
+	0% {
+    width: 0;
+  }
+
+	100% {
+    width: 100%;
+  }
+}
+
+@keyframes rightslide {
+	0% {
+    height: 0;
+  }
+
+	100% {
+    height: 100%;
+  }
+}
+
+@keyframes spin {
+	10% {
+		width: 0;
+		height: 0;
+		border-width: 6px;
+	}
+
+	30% {
+		width: 0;
+		height: 0;
+		border-radius: 50%;
+		border-width: 14px;
+		transform: rotate(0deg);
+		border-color: LightGray;
+	}
+
+	50% {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border-width: 4px;
+		border-color: LightGray;
+		border-right-color: DarkTurquoise;
+	}
+
+	70% {
+		border-width: 4px;
+		border-color: LightGray;
+		border-right-color: DarkTurquoise;
+	}
+
+	90% {
+		border-width:4px;
+	}
+
+	100% {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		transform: rotate(720deg);
+		border-color: transparent;
+	}
+}
+
+::selection {
+	background-color: transparent;
+	color: LimeGreen;
+}
+
+::-moz-selection {
+	background-color:transparent;
+	color:teal;
+}
+
+
+/* ╔══════════════ ✿.｡.:* ☆:**:. Login & Sign-up Forms .:**:.☆*.:｡.✿ ═══════════════╗ */
+
+.login-container {
+  width: 25%;
+  padding: 35px 25px 10px 25px;
+}
+
+.login-container .fa-user{
+  position: fixed;
+  z-index: -1;
+  margin-left: -21px;
+  font-size: 3350%;
+  color: PaleTurquoise;
+  opacity: 25%;
+
+}
+
+.login-container h2{
+  padding-bottom: 13px;
+  color: DarkTurquoise;
+}
+
+.login-container .form-container .fa-eye{
+  margin-top: 7px;
+  margin-left: -25px;
+  font-size: 22px;
+  color: DarkTurquoise;
+}
+
+.login-container .form-container .btn{
+  margin-top: 5px;
+}
+
+.login-container .form-container{
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-container .form-container a{
+  color: DarkTurquoise;
+}
+
+.login-container .form-container a:hover{
+  color: DeepPink;
+}
+
+.signup-form .btn{
+  margin-top: -7px !important
+}
+
+.signup-form .captcha {
+  margin-top: 15px;
+}
+
+.signup-form .btn {
+  margin-top: -10px !important
+}
+
+/*︵‿︵‿୨   THE ALERT MESSAGES   ୧‿︵‿︵*/
+
+.alert-container .alert-success{
+  position: fixed;
+  margin: 8px 0px 0px 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: LightGreen;
+  color: White;
+  text-align: center;
+  visibility: hidden;
+}
+
+.alert-container .alert-unavailable{
+  position: fixed;
+  margin: -5px 0px 0px -70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: Tomato;
+  color: WhiteSmoke;
+  visibility: hidden;
+}
+
+.alert-fail {
+  position: fixed;
+  width: 400px;
+  margin: -15px 0px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: Tomato;
+  color: WhiteSmoke;
+  visibility: hidden;
+}
+
+/*︵‿︵‿୨   THE NON-JS TOOLTIP   ୧‿︵‿︵*/
+
+.fa-circle-question {
+  color: DarkTurquoise;
+  cursor: help;
+}
+
+.mytooltip {
+  position: relative;
+}
+
+.mytooltip:before {
+  display:none; /* <== */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 15px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  content: attr(data-text);
+  background: LightPink;
+  font-family: 'Raleway';
+  font-size: 90%;
+  color: White;
+  text-align:center;
+}
+
+.mytooltip:hover:before {
+  display: block;
+}
+
+/* AND THE TOOLTIP'S ARROW-Y TIP */
+.mytooltip:after {
+  display:none;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:100%;
+  margin-left:-5px;
+  content: "";
+  border:10px solid #000;
+  border-color: transparent LightPink transparent transparent;
+}
+
+.mytooltip:hover:before, .mytooltip:hover:after {
+  display: block;
+}
+
+/*︵‿︵‿୨   THE IMITATION 'PLEASE FILL OUT THIS FIELD' MESSAGE   ୧‿︵‿︵*/
+
+.fill-container-top {
+  position: fixed;
+  top: 380px;
+  left: 807px;
+  height: 7%;
+  width: 13%;
+  border: 1px solid Gray;
+  border-radius: 5px;
+}
+
+.please-fill {
+  padding: 8px;
+}
+
+.please-text {
+  padding-left: 7px;
+  font-size: 90%;
+}
+
+.please-icon {
+  padding: 2px 9px 2px 9px;
+  border-radius: 2px;
+  font-family: 'Tahoma';
+  font-size: 100%;
+  font-weight: bold;
+  color: White;
+  background-color: Orange;
+}
+
+/* AND THE IMITATION 'PLEASE FILL OUT THIS FIELD' MESSAGE'S ARROW-Y TIP */
+.fill-container-top:before {
+  position: absolute;
+  top: -7.4px;
+  left: 15px;
+  height: 13px;
+  width: 13px;
+  transform: rotate(45deg);
+  background-color: White;
+  content: "";
+  border-top: 1px solid Gray;
+  border-left: 1px solid Gray;
+}
+
+
+/* ╔════════════════════════ ✿.｡.:* ☆:**:. TY .:**:.☆*.:｡.✿ ════════════════════════╗ */
+
+.thank-you {
+  position: fixed;
+  margin: -31px 405px 0px 404px;
+  width: 1095px;
+  text-align: center;
+  visibility: hidden;
+}
+
+h4{
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 150%;
+  color: DeepPink;
+}
+
+
+/* ╔═════════════════════ ✿.｡.:* ☆:**:. Comments .:**:.☆*.:｡.✿ ═════════════════════╗ */
+
+.speech-bubble {
+    position: relative;
+    background: LightCyan;
+    font-family: 'Raleway';
+    font-size: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 21px 21px 0;
+    border-color: transparent LightCyan transparent transparent;
+    bottom: -21px;
+    left: 20%;
+    margin-left: -10.5px;
+  }
+
+  .quote-reference{
+    margin: 12px 0px 25px 90px;
+    font-weight: bold;
+    line-height: 0.4;
+  }
+
+  .quote-author{
+    font-size: 110%;
+    margin-left: 12px;
+    padding-top: 5px;
+    color: DarkTurquoise;
+  }
+
+  .quote-date{
+    font-size: 95%;
+    margin-left: 12px;
+    color: LightGray
+  }
+
+
+/* ╔══════════════ ✿.｡.:* ☆:**:. Shop Window Display .:**:.☆*.:｡.✿ ══════════════╗ */
+
+  .forsale-container{
+    display: grid;
+    padding: 25px 0px 0px 0px;
+  }
+
+  .card-body{
+    height: 525px;
+    width: 425px;
+    background-color: WhiteSmoke;
+  }
+
+  .shop-card .img-container .shop-img{
+    aspect-ratio: 4 / 3;
+    border: solid Snow;
+    border-width: 15px 15px 50px 15px;
+    box-shadow: 0 1px 3px 0 rgba(255, 240, 245, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .shop-card-v .img-container {
+    text-align: center;
+  }
+
+  .shop-card-v .img-container .shop-img-v {
+    aspect-ratio: 3 / 4;
+    height: 300px;
+    width: auto;
+    text-align: center;
+    border: solid Snow;
+    border-width: 15px 15px 30px 15px;
+    box-shadow: 0 1px 3px 0 rgba(255, 240, 245, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .shop-card-v .info-container {
+    margin-bottom: -5px;
+  }
+
+  .photo-location{
+    padding-top: 15px;
+  }
+
+  .photo-title{
+    font-size: 125%;
+    font-weight: lighter;
+    padding-bottom: 7.5px;
+  }
+
+  .descripcion{
+    font-size: 90%;
+  }
+
+  .shop-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+  }
+
+  .btn-group .shop-quantity {
+    height: 35px;
+    width: 45px;
+    padding: 0px 0px 0px 15px;
+    border: 0px;
+    font-weight: bold;
+    text-align: center;
+    background-color: Snow /*WhiteSmoke*/
+  }
+
+  .shop-quantity:focus{
+    box-shadow: none !important;
+  }
+
+  .shop-operators {
+    font-family: 'Raleway';
+    font-weight: bold  !important;
+    color: DarkTurquoise !important;
+    border: 0px  !important;
+  }
+
+  .shop-operators:hover {
+    background-color: transparent  !important;
+    color: DeepPink  !important;
+  }
+
+  .shop-operators:focus {
+    box-shadow: none !important;
+  }
+
+  .shop-operators {
+    margin-top: -15px;
+    font-size: 200%  !important;
+  }
+
+  .shop-delete{
+    font-size: 120%;
+    color: OrangeRed;
+    border: none !important;
+    background-color: transparent !important;
+  }
+
+  .shop-delete:hover{
+    color: Red;
+  }
+
+  .buy-container{
+    padding: 5px;
+  }
+
+  .buy-me {
+    padding: 5px 50px 5px 50px;
+    font-family: 'Raleway';
+    font-size: 115%;
+    font-weight: bold;
+    text-decoration: none;
+    color: DeepPink;
+    border: solid 1px DeepPink;
+    border-radius: 20px;
+  }
+
+  .buy-me:hover {
+    background-color: DeepPink;
+    border-color: DeepPink;
+    color: White;
+  }
+
+  @media only screen and (max-device-width: 1366px) {
+    .card-body{
+      height: 525px;
+      width: 383px;
+      background-color: WhiteSmoke;
+    }
+
+    .shop-card-v .img-container .shop-img-v {
+      height: 265px;
+    }
+
+    .descripcion{
+      font-size: 85%;
+    }
+  }
+
+
+/* ╔══════════════ ✿.｡.:* ☆:**:. Shop Basket & Checkout .:**:.☆*.:｡.✿ ══════════════╗ */
+
+  .basket-container{
+    padding: 0px 75px 50px 50px;
+    background-color: Snow;
+  }
+
+  .basket-container h2 {
+    padding-bottom: 35px;
+  }
+
+  .checkout-table{
+    vertical-align: middle;
+  }
+
+  .checkout-table .scene-column{
+    display: flex;
+    justify-content: center;
+  }
+
+  .scene-select {
+    height: 112px;
+    aspect-ratio: 4 / 3;
+    padding: 5px;
+    background-color: Snow;
+    box-shadow: 0 1px 3px 0 rgba(255, 240, 245, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .scene-select-v{
+    height: 112px;
+    aspect-ratio: 3 / 4;
+    padding: 5px;
+    background-color: Snow;
+    box-shadow: 0 1px 3px 0 rgba(255, 240, 245, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .checkout-table .scene-checkout {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .checkout-table h4{
+    color: DarkTurquoise
+  }
+
+  .checkout-table .checkout-btn, .checkout-table input{
+    font-size: 115%;
+  }
+
+  .checkout-table .fa-xmark, .checkout-table .descripcion{
+    font-size: 17px;
+    color: DarkGray;
+  }
+
+  .checkout-table .fa-xmark:hover{
+    color: OrangeRed;
+    text-decoration: none;
+  }
+
+  .checkout-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    padding: 0px 50px 50px 50px;
+    background-color: LavenderBlush;
+  }
+
+  .checkout-container h2{
+    padding-bottom: 50px;
+  }
+
+  .checkout-container .col-6{
+    padding-bottom: 15px;
+  }
+
+  .checkout-form label, .checkout-form input {
+    font-size: 125%;
+  }
+
+  .checkout-form .form-control-plaintext {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .checkout-form input, .checkout-form select {
+    text-align: center;
+    border: 0px;
+  }
+
+  .checkout-form .promo-code{
+    font-weight: bold;
+    color: LimeGreen;
+  }
+
+  .checkout-form .calculator-hr{
+    margin: 50px 0px 25px 0px;
+    border: 1px solid Black;
+    opacity: 100%
+  }
+
+  .checkout-form .monto-total{
+    font-size: 130%;
+    font-weight: bolder
+  }
+
+  .checkout-form .btn {
+    margin-top: 50px;
+  }
+
+  footer .page-back{
+    position: fixed;
+    left: 50px;
+    bottom: 25px;
+  }
+
+  footer .page-back a{
+    font-family: 'Raleway';
+    font-size: 115%;
+    font-weight: bold;
+    color: DeepPink;
+    text-decoration: none;
+  }
+
+
+/* ╔══════════════════════ ✿.｡.:* ☆:**:. 404 .:**:.☆*.:｡.✿ ══════════════════════╗ */
+
+  .fourohfour-container{
+    text-align: center;
+
+  }
+
+  .fourohfour-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+
+  .fourohfour-container h1{
+    margin-top: 75px;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 750%;
+    color: Gainsboro;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+  .fourohfour-container h2{
+    margin: -50px 0px 30px 0px;
+    font-family: "Hurricane";
+    font-size: 760%;
+    color: Gainsboro;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+  .fourohfour-container p{
+    font-family: "Raleway";
+    font-size: 150%;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+  }
+
+  .fourohfour-container a{
+    color: Gainsboro;
+    text-decoration: none;
+  }
